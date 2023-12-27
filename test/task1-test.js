@@ -3,7 +3,7 @@ const assert = require('chai').assert;
 const dropdownPageUrl = 'https://the-internet.herokuapp.com/dropdown';
 let driver = new Builder().forBrowser('chrome').build();
 
-describe('Test Dropdown page', function() {
+describe('State of element activity', function() {
     this.beforeEach(async () => {
         await driver.get(dropdownPageUrl);
         await driver.findElement(By.css('#dropdown')).click();
